@@ -39,7 +39,7 @@ space complexity: O(1) (constant space).
 
 ex. 2
 
-let arr new Array(n);
+let arr = new Array(n);
 
 Here memory grows with input size, space complexity is _O(n)_.
 
