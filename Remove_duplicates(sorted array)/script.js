@@ -13,4 +13,4 @@ const removeDuplicates = (arr) => {
   return (x + 1)
 };
 
-console.log(removeDuplicates(arr));
+console.log(removeDuplicates(arr))
