@@ -31,3 +31,7 @@ const findSingleNum = (nums) => {
 };
 
 console.log(findSingleNum(arr));
+
+
+// Time Complexity O(n)
+// Space Complexity O(1)
