@@ -5,3 +5,6 @@ const sum = (n) => {
 }
 
 console.log(sum(5));
+
+// time complexity = O(n)
+// space complexity = O(n)

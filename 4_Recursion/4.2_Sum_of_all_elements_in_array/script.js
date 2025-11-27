@@ -6,3 +6,6 @@ const sum = (n) => {
 }
 
 console.log(sum(arr.length - 1));
+
+// time complexity = O(n)
+// space complexity = O(n)
