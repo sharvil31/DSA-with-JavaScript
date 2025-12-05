@@ -1,10 +1,14 @@
-const reverseStr = (str, i = 0, j = str.length - 1) => {
-  if (i >= j) return str;
-  let temp = str[i];
-  str[i] = str[j];
-  str[j] = temp;
+const reverseStr = (str) => {
+  if (str.length <= 1) return str;
 
-  return reverseStr(str, i + 1, j - 1);
+  return reverseStr(str.slice(1)) + str[0];
 };
 
 console.log(reverseStr("hello"));
+
+
+// (ello) + h// olle + h = olleh
+// (llo) + e// oll + e = olle
+// (lo) + l// ol + l = oll
+// (o) + l// ol
+// return o
