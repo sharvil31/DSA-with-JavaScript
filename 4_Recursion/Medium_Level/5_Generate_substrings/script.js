@@ -1,10 +1,11 @@
 const generateSubStrings = (str) => {
-  const res = [];
+  let res = [];
 
   const helper = (start) => {
     if (start === str.length) return;
 
     let temp = "";
+
     for (let i = start; i < str.length; i++) {
       temp += str[i];
       res.push(temp);
@@ -14,6 +15,7 @@ const generateSubStrings = (str) => {
   };
 
   helper(0);
+  
   return res;
 };
 
