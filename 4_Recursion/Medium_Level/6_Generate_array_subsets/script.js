@@ -1,21 +1,17 @@
 const generateSubsets = (arr) => {
-  const res = [[]];
+  const res = []; // [[], [1], [1, 2], [1, 2, 3], [1, 3], []]
 
-  const helper = (start) => {
-    if (start === arr.length) return;
-    let temp = [];
+  const helper = (start, current) => {
+    res.push([...current]); // Add current subset
 
     for (let i = start; i < arr.length; i++) {
-      temp.push(arr[i]);
-      res.push([...temp]);
-      
+      current.push(arr[i]); // Choose element
+      helper(i + 1, current); // Recurse
+      current.pop(); // Backtrack (undo choice)
     }
-
-    helper(start + 1);
   };
 
-  helper(0);
-
+  helper(0, []);
   return res;
 };
 
